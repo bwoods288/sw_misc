@@ -1,0 +1,26 @@
+It doesn't simulate writing, only reading currently. 
+
+sample calling of the program 
+
+./cachesim  -ds 4096 -bs 16 -as 8 -wp 1 -vs 8  -in test.txt
+
+-ds is the data cache size 
+-bs is the block size 
+-as is the associativity
+-wp is the write policy 
+-vs is the victim cache size in blocks 
+-in is the input file     
+
+for the write policy 0 is write back and 1 is write though
+	
+	
+	 
+The input file format is 
+
+x y z 
+
+where s 
+    x = 0 for read 
+    x = 1 for write, currently not working/written
+    y is the number of number of bytes being written or read 
+    z is the address 
